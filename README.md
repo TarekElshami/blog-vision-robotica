@@ -5,5 +5,6 @@ Este repositorio contiene las memorias detalladas de las prácticas realizadas e
 
 ## Listado de Prácticas
 * [**Práctica 1: Visual Follow Line**](./P1_FollowLine.md) - Control PD para seguimiento de línea roja en un F1 usando visión artificial (HSV).
-* *Práctica 2: [Próximamente]*
+* [**Práctica 2: Reconstrucción 3D**](./P2_reconstruccion_3d.md) - Reconstrucción 3D de una escena mediante emparejamiento epipolar y triangulación por intersección de rayos.
 * *Práctica 3: [Próximamente]*
+* *Práctica 4: [Próximamente]*
