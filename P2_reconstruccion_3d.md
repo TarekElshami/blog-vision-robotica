@@ -18,9 +18,11 @@ Para decidir qué píxeles reconstruir, usé los **bordes** de la imagen como pu
 Probé distintos umbrales. Con valores bajos se detectaban demasiados bordes y el proceso de emparejamiento se ralentizaba mucho sin ganar calidad. Con valores altos se perdían detalles de los objetos más pequeños. Los valores `(30, 100)` dieron un buen equilibrio entre densidad de puntos y tiempo de cómputo. Como se puede ver en la siguiente imagen, cada píxel blanco es un punto de interés que intentaremos emparejar.
 
 ![Imágenes originales](./images/originales.png)
+
 *Imágenes originales de las cámaras izquierda y derecha.*
 
 ![Bordes Canny](./images/canny.png)
+
 *Bordes detectados con Canny (30, 100).*
 
 También probé a aplicar un filtrado bilateral antes de Canny para suavizar el ruido, pero en las pruebas no mejoraba los resultados y añadía tiempo de cómputo, así que lo descarté.
@@ -42,6 +44,7 @@ Para decidir cuál de los candidatos es el correcto, extraigo un **patch de 11×
 Si el mejor match tiene un SSD superior a un umbral, lo descarto como falso positivo. Para ajustar ese umbral, fui probando distintos valores y observando visualmente los matches resultantes: con valores muy bajos se perdían demasiados puntos válidos, y con valores muy altos entraban matches claramente incorrectos. El valor **15000** fue el que mejor equilibrio daba entre cantidad y calidad de matches. Como se puede ver en la imagen y en el vídeo, las correspondencias encontradas son coherentes con la escena.
 
 ![Matches](./images/matches.png)
+
 *Correspondencias encontradas entre ambas imágenes.*
 
 ▶️ [Ver vídeo de matches](https://youtu.be/t37acJVpJrs)
@@ -72,6 +75,7 @@ La media era 0.0008, lo que indica que la gran mayoría de emparejamientos son b
 Como se puede ver en la siguiente imagen y en el vídeo, la reconstrucción final muestra las figuras de la escena con sus colores originales. Cada punto se pinta con el color del píxel original de la imagen izquierda.
 
 ![Reconstrucción 3D](./images/reconstruccion.png)
+
 *Reconstrucción 3D final. Se distinguen las siluetas de los objetos con sus colores originales.*
 
 ▶️ [Ver vídeo de la reconstrucción 3D](https://youtu.be/aAzL0eivq4E)
