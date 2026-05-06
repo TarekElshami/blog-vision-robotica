@@ -7,4 +7,4 @@ Este repositorio contiene las memorias detalladas de las prácticas realizadas e
 * [**Práctica 1: Visual Follow Line**](./P1_FollowLine.md) - Control PD para seguimiento de línea roja en un F1 usando visión artificial (HSV).
 * [**Práctica 2: Reconstrucción 3D**](./P2_reconstruccion_3d.md) - Reconstrucción 3D de una escena mediante emparejamiento epipolar y triangulación por intersección de rayos.
 * [**Práctica 3: Localización Visual con Balizas**](./P3_localizacion_visual.md) - Estimación de pose de un robot mediante detección de AprilTags y transformaciones al sistema global.
-* *Práctica 4: [Próximamente]*
+* [**Práctica 4: End-to-End Visual Control**](./P4_end_to_end_visual_control.md) - Red neuronal PilotNet entrenada para control visual de un F1.
