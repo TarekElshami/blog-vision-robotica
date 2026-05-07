@@ -25,7 +25,7 @@ El procesamiento es idéntico al de P1: dos rangos en el espectro HSV para cubri
 
 ## 2. Arquitectura: PilotNet
 
-Como arquitectura usé **PilotNet**, el modelo que NVIDIA publicó para conducción autónoma end-to-end. Consiste en una serie de capas convolucionales que extraen características de la imagen seguidas de capas completamente conectadas que mapean esas características a las dos salidas: velocidad lineal y angular.Es una arquitectura probada para este tipo de tareas y recomendada en el propio enunciado de la práctica. La entrada es la máscara HSV con sus etiquetas de velocidad lineal y angular asociadas. La salida son dos valores (v, w) que se pasan directamente a los actuadores del coche.
+Como arquitectura usé **PilotNet**, el modelo que NVIDIA publicó para conducción autónoma end-to-end. Consiste en una serie de capas convolucionales que extraen características de la imagen seguidas de capas completamente conectadas que mapean esas características a las dos salidas: velocidad lineal y angular. Es una arquitectura probada para este tipo de tareas y recomendada en el propio enunciado de la práctica. La entrada es la máscara HSV con sus etiquetas de velocidad lineal y angular asociadas. La salida son dos valores (v, w) que se pasan directamente a los actuadores del coche.
 
 ---
 
@@ -55,7 +55,7 @@ Vuelta completa sin incidencias.
 
 ### Montreal
 
-Circuito más largo. Grabé 10 minutos de simulación sin incidencias. No grabé la vuelta entera por el mismo motivo que en P1 a ese RTF la grabación completa llevaría demasiado tiempo.
+Circuito más largo. Grabé 10 minutos de simulación sin incidencias. No grabé la vuelta entera por el mismo motivo que en P1, a ese RTF la grabación completa llevaría demasiado tiempo.
 
 ▶️ [Ver vídeo](https://youtu.be/nPlporgFKQE)
 
